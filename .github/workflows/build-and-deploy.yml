@@ -1,0 +1,38 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: GitHub Pages deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '20.x'
+      - name: Set Environment Variables
+        env:
+          BASE_PATH: /should-i-go-kitesurfing
+        run: |
+          echo "" > .env.local
+          echo BASE_PATH=$BASE_PATH >> .env.local
+      - name: Installing my packages
+        run: npm ci
+      - name: Build my App
+        run: npm run build && touch ./out/.nojekyll
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          BRANCH: gh-pages # The branch the action will deploy to
+          FOLDER: out # The folder the action will deploy to
