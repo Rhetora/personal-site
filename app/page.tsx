@@ -1,6 +1,5 @@
 import meImage from "../public/me.jpg";
 import backgroundImage from "../public/background.jpg";
-import Image from "next/image";
 
 export default function Home() {
   return (
