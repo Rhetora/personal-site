@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/personal-site"
+    output: 'export',
+    // basePath: "/personal-site"
 };
 
 export default nextConfig;
