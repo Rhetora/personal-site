@@ -1,5 +1,6 @@
 import meImage from "../public/me.jpg";
 import backgroundImage from "../public/background.jpg";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -43,7 +44,7 @@ function Cover() {
             />
           </div>
           <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-6xl">
-            Hey, I'm Aran
+            Hey, I&apos;m Aran
           </h2>
         </div>
       </div>
