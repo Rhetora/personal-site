@@ -1,7 +1,6 @@
 "use client";
 import { createContext, useEffect, useState } from "react";
 
-
 interface ThemeContextType {
   theme?: string;
   changeTheme?: (nextTheme?: string) => void;
@@ -9,24 +8,32 @@ interface ThemeContextType {
 export const ThemeContext = createContext<ThemeContextType>({});
 
 export const ThemeProvider = ({ children }: any) => {
-  const [theme, setTheme] = useState<string>(
-     "light"
-  );
+  // Initialize theme state with null
+  const [theme, setTheme] = useState<string | undefined>(undefined);
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
+    // This code runs only on the client
+    const storedTheme = localStorage.getItem("theme");
+    console.log("storedTheme", storedTheme);
+
+    // Set theme state only if it's not set (initial render)
+    if (!theme) {
+      setTheme(storedTheme || "dark");
+    }
+  }, [theme]);
+
+  useEffect(() => {
+    if (theme) {
+      localStorage.setItem("theme", theme);
+    }
   }, [theme]);
 
   const changeTheme = (event?: any) => {
-    const nextTheme: string | null = event.target.value || null;
-    if (nextTheme) {
-      setTheme(nextTheme);
-    } else {
-      setTheme((prev) => (prev === "light" ? "dark" : "light"));
-    }
+    const nextTheme = event.target.value || null;
+    setTheme((prev) => nextTheme || (prev === "light" ? "dark" : "light"));
   };
   return (
-    <ThemeContext.Provider value={{ theme, changeTheme }}>
+    <ThemeContext.Provider value={{ theme: theme, changeTheme }}>
       {children}
     </ThemeContext.Provider>
   );

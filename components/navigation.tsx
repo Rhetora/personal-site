@@ -6,7 +6,7 @@ import ThemeSwap from "@/components/ThemeBtn";
 import { ThemeContext } from "@/context/ThemeContext";
 
 const navigation = [
-  //{ name: "Home", href: "/" },
+  { name: "Home", href: "/" },
   //{ name: "Skills", href: "/skills" },
   { name: "Experience", href: "/experience" },
   { name: "Education", href: "/education" },
