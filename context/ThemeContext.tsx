@@ -14,7 +14,6 @@ export const ThemeProvider = ({ children }: any) => {
   useEffect(() => {
     // This code runs only on the client
     const storedTheme = localStorage.getItem("theme");
-    console.log("storedTheme", storedTheme);
 
     // Set theme state only if it's not set (initial render)
     if (!theme) {
