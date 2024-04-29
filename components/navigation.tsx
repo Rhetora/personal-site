@@ -8,12 +8,12 @@ import { ThemeContext } from "@/context/ThemeContext";
 const navigation = [
   { name: "Home", href: "/" },
   //{ name: "Skills", href: "/skills" },
-  { name: "Experience", href: "/experience" },
-  { name: "Education", href: "/education" },
-  { name: "Projects", href: "/projects" },
-  { name: "Qualifications", href: "/qualifications" },
-  { name: "Adventures", href: "/adventures" },
-  { name: "Blog", href: "/blog" },
+  { name: "Timeline", href: "/experience" },
+  //{ name: "Education", href: "/education" },
+  // { name: "Projects", href: "/projects" },
+  // { name: "Qualifications", href: "/qualifications" },
+  // { name: "Adventures", href: "/adventures" },
+  // { name: "Blog", href: "/blog" },
 ];
 
 function classNames(...classes: any) {

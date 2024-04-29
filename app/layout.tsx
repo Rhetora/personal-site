@@ -23,7 +23,6 @@ export default function RootLayout({
         <ThemeProvider>
           <ClientThemeWrapper>
             <Navbar />
-
             {children}
           </ClientThemeWrapper>
         </ThemeProvider>
