@@ -1,5 +1,3 @@
-import meImage from '/public/me.webp';
-
 export default function Home() {
   return (
     <div>
@@ -16,7 +14,7 @@ function Cover() {
         <div className="max-w-md space-y-10">
           <div className="avatar">
             <div className="w-40 rounded-full ring ring-base-100 ring-offset-base-100 ring-offset-1">
-              <img src={meImage.src} />
+              <img src="./me.webp" />
             </div>
           </div>
           <h1 className="text-6xl font-semibold">Hey, I&apos;m Aran!</h1>

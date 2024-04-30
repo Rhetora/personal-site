@@ -23,7 +23,7 @@ const experienceItems: experienceItem[] = [
   {
     category: "work",
     date: "Feb. 2024 - Present",
-    image: "/captainapp.webp",
+    image: "./captainapp.webp",
     org: "Captain App",
     location: "Bristol, UK",
     title: "Software Engineer",
@@ -33,7 +33,7 @@ const experienceItems: experienceItem[] = [
   {
     category: "work",
     date: "Oct. 2021 - Nov. 2022",
-    image: "/xmos.webp",
+    image: "./xmos.webp",
     org: "XMOS",
     location: "Bristol, UK",
     title: "Graduate Software Engineer",
@@ -43,7 +43,7 @@ const experienceItems: experienceItem[] = [
   {
     category: "work",
     date: "June 2020 - Sept. 2020",
-    image: "/beko.webp",
+    image: "./beko.webp",
     org: "Beko R&D",
     location: "Cambridge, UK",
     title: "Summer Intern",
@@ -53,7 +53,7 @@ const experienceItems: experienceItem[] = [
   {
     category: "work",
     date: "June 2019 - Sept. 2019",
-    image: "/lascar.webp",
+    image: "./lascar.webp",
     org: "Lascar Electronics",
     location: "Whiteparish, UK",
     title: "Summer Intern",
@@ -63,7 +63,7 @@ const experienceItems: experienceItem[] = [
   {
     category: "education",
     date: "Sept. 2017 - June. 2021",
-    image: "/southampton.webp",
+    image: "./southampton.webp",
     org: "University of Southampton",
     location: "Southampton, UK",
     title: "MEng Electronic Engineering",
@@ -73,7 +73,7 @@ const experienceItems: experienceItem[] = [
   {
     category: "education",
     date: "Sept. 2015 - June. 2017",
-    image: "/gcs.webp",
+    image: "./gcs.webp",
     org: "Gower College Swansea",
     location: "Swansea, UK",
     title: "A Levels",

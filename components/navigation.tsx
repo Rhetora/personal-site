@@ -6,9 +6,9 @@ import ThemeSwap from "@/components/ThemeBtn";
 import { ThemeContext } from "@/context/ThemeContext";
 
 const navigation = [
-  { name: "Home", href: "/" },
+  { name: "Home", href: "./" },
   //{ name: "Skills", href: "/skills" },
-  { name: "Timeline", href: "/experience" },
+  { name: "Timeline", href: "./experience" },
   //{ name: "Education", href: "/education" },
   // { name: "Projects", href: "/projects" },
   // { name: "Qualifications", href: "/qualifications" },
@@ -35,7 +35,7 @@ export default function Navbar() {
           {navigation.map((item) => (
             <li key={item.name}>
               <a
-                href='/experience'
+                href={item.href}
                 className={classNames(isActive(item.href) ? "active" : "")}
               >
                 {item.name}
