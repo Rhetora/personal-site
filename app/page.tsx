@@ -1,3 +1,5 @@
+import background from '/public/background.jpg';
+
 export default function Home() {
   return (
     <div>
@@ -9,7 +11,7 @@ export default function Home() {
 
 function Cover() {
   return (
-    <div className={`hero min-h-[calc(100vh-4rem)] bg-[url('/background.jpg')]`}>
+    <div className={`hero min-h-[calc(100vh-4rem)]`} style={{backgroundImage: `url(${background.src})`}}>
       <div className="hero-content text-center">
         <div className="max-w-md space-y-10">
           <div className="avatar">
