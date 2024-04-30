@@ -35,7 +35,7 @@ export default function Navbar() {
           {navigation.map((item) => (
             <li key={item.name}>
               <a
-                href={item.href}
+                href='/experience'
                 className={classNames(isActive(item.href) ? "active" : "")}
               >
                 {item.name}
