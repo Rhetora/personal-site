@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 
-interface experienceItem {
+interface ExperienceItem {
   category: "work" | "education";
   date: string;
   image: string;
@@ -19,7 +19,7 @@ interface FilterStates {
   //travel: boolean;
 }
 
-const experienceItems: experienceItem[] = [
+const experienceItems: ExperienceItem[] = [
   {
     category: "work",
     date: "Feb. 2024 - Present",
@@ -132,7 +132,7 @@ function ExperienceItem({
   itemData,
   ind,
 }: {
-  itemData: experienceItem;
+  itemData: ExperienceItem;
   ind: number;
 }) {
   //FIX ANY
