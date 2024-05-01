@@ -47,7 +47,7 @@ function Intro() {
             tech landscape.
           </p>
           <button className="btn btn-primary text-lg">
-            <a href="/aran_mcconnell.pdf" download="Aran McConnell">
+            <a href="./aran_mcconnell.pdf" download="Aran McConnell">
               Download my CV
             </a>
           </button>
