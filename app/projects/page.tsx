@@ -13,9 +13,18 @@ const projectItems: ProjectItem[] = [
     org: "Personal",
     description:
       "A nextjs project that scrapes wind data from user inputted locations, and determines whether it is good conditions for the user to go kitesurfing.",
-    repoUrl: "test.com",
+    repoUrl: "https://github.com/Rhetora/should-i-go-kitesurfing",
     liveUrl: "test.com",
     technologies: ["NextJS", "TailwindCSS", "Typescript"],
+  },
+  {
+    title: "University Surf Club Website",
+    org: "SUSURF",
+    description:
+      "A website built for my University Surf Club, to provide information about the club, and to allow members to sign up for events. The site was built to streamline a number of aspects of running the club, and also to streamline the experience for members. The site was designed to be easily maintainable by non-technical users.",
+    repoUrl: "www.susurf.co.uk",
+    liveUrl: "test.com",
+    technologies: ["Django", "Bootstrap", "Nginx"],
   },
 ];
 
