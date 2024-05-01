@@ -21,7 +21,7 @@ const projectItems: ProjectItem[] = [
 
 export default function Projects() {
   return (
-    <div className="p-20">
+    <div className="p-2 lg:p-20">
       {projectItems.map(
         (item, index) =>
             <ProjectCard itemData={item} key={index} />
