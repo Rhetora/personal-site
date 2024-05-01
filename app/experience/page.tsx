@@ -168,6 +168,7 @@ function ExperienceItem({
             }
             className="h-16"
             src={itemData.image}
+            alt={itemData.org}
           />
         </div>
         <div className="text-lg font-semibold text-base-content">
