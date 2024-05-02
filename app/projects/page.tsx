@@ -22,7 +22,7 @@ const projectItems: ProjectItem[] = [
     org: "SUSURF",
     description:
       "A website built for my University Surf Club, to provide information about the club, and to allow members to sign up for events. The site was built to streamline a number of aspects of running the club, and also to streamline the experience for members. The site was designed to be easily maintainable by non-technical users.",
-    repoUrl: "www.susurf.co.uk",
+    repoUrl: "https://www.susurf.co.uk",
     liveUrl: "test.com",
     technologies: ["Django", "Bootstrap", "Nginx"],
   },
@@ -45,8 +45,8 @@ const ProjectCard = ({
   itemData: ProjectItem;
 }) => {
   return (
-    <div className="card card-bordered shadow-lg hover:shadow-xl transition-shadow duration-300 bg-base-100 flex flex-col md:flex-row">
-      <div className="card-body flex-grow">
+    <div className="card card-bordered m-4 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-base-200 flex flex-col md:flex-row">
+      <div className="card-body flex-grow lg:w-3/4">
         <h2 className="card-title font-bold">
           {itemData.title}
           <div className="italic font-light">{itemData.org}</div>
