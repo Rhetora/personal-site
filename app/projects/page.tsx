@@ -9,6 +9,15 @@ interface ProjectItem {
 
 const projectItems: ProjectItem[] = [
   {
+    title: "Recognising the Activities of African Wild Dogs Using Machine Learning",
+    org: "University",
+    description:
+      "My 4th Year University group dissertation project, to use machine learning techniques to clasify the activities of African Wild Dogs from IMU data. The project involved data collection, labelling, feature extraction, and implementation of ML methods.",
+    repoUrl: "https://github.com/Rhetora/4th-year-project",
+    liveUrl: "test.com",
+    technologies: ["Python", "Machine Learning", "SKLearn"],
+  },
+  {
     title: "Should I go kitesurfing?",
     org: "Personal",
     description:
@@ -24,7 +33,7 @@ const projectItems: ProjectItem[] = [
       "A website built for my University Surf Club, to provide information about the club, and to allow members to sign up for events. The site was built to streamline a number of aspects of running the club, and also to streamline the experience for members. The site was designed to be easily maintainable by non-technical users.",
     repoUrl: "https://www.susurf.co.uk",
     liveUrl: "test.com",
-    technologies: ["Django", "Bootstrap", "Nginx"],
+    technologies: ["Python", "Django", "Bootstrap", "Nginx"],
   },
 ];
 
