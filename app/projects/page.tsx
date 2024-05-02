@@ -9,26 +9,49 @@ interface ProjectItem {
 
 const projectItems: ProjectItem[] = [
   {
-    title: "Recognising the Activities of African Wild Dogs Using Machine Learning",
+    title:
+      "Recognising the Activities of African Wild Dogs Using Machine Learning",
     org: "University",
     description:
-      "My 4th Year University group dissertation project, to use machine learning techniques to clasify the activities of African Wild Dogs from IMU data. The project involved data collection, labelling, feature extraction, and implementation of ML methods.",
-    repoUrl: "https://github.com/Rhetora/4th-year-project",
+      "My 4th Year University group dissertation project, to use machine learning techniques to clasify the activities of African Wild Dogs from IMU data. The project involved data collection, labelling, feature extraction, and implementation of ML methods. The finished solution utilised deep learning techniques, with time series feature extraction using the fourier and wavelet transforms.",
+    repoUrl:
+      "https://github.com/Rhetora/4th-year-project/blob/main/ELEC6200_GDP___Final_Report.pdf",
     liveUrl: "test.com",
     technologies: ["Python", "Machine Learning", "SKLearn"],
+  },
+  {
+    title: "Predicting used car prices using machine learning",
+    org: "University",
+    description:
+      "An exploratory project using the Kaggle Used Cars database to produce a model that accurately predicted a used cars price. Supervised techniques such as XGBoost and emsembling were utilised.",
+    repoUrl:
+      "https://github.com/Rhetora/aml-coursework/blob/main/COMP6208__AML_Machine_Learning_Report.pdf",
+    liveUrl: "test.com",
+    technologies: ["Python", "Machine Learning", "SKLearn"],
+  },
+  {
+    title:
+      "Use of Embedded devices in rehabilitation monitoring for leg surgery patients ",
+    org: "University",
+    description:
+      "My 3rd year individual dissertation project. Utilising IMU measurements and sensor fusion to provide metrics useful in the context of monitoring leg surgery rehabilitation. An embedded device was produced alongside a C# mobile application.",
+    repoUrl:
+      "https://github.com/Rhetora/3rd-year-project/blob/main/Final%20Report.pdf",
+    liveUrl: "test.com",
+    technologies: ["C", "C#", "Circuit Design", "Mbed OS"],
   },
   {
     title: "Should I go kitesurfing?",
     org: "Personal",
     description:
-      "A nextjs project that scrapes wind data from user inputted locations, and determines whether it is good conditions for the user to go kitesurfing.",
+      "A NextJS project that scrapes wind data from user inputted locations, and determines whether the conditions are good for the user to go kitesurfing. WIP",
     repoUrl: "https://github.com/Rhetora/should-i-go-kitesurfing",
     liveUrl: "test.com",
     technologies: ["NextJS", "TailwindCSS", "Typescript"],
   },
   {
     title: "University Surf Club Website",
-    org: "SUSURF",
+    org: "SuSurf",
     description:
       "A website built for my University Surf Club, to provide information about the club, and to allow members to sign up for events. The site was built to streamline a number of aspects of running the club, and also to streamline the experience for members. The site was designed to be easily maintainable by non-technical users.",
     repoUrl: "https://www.susurf.co.uk",
