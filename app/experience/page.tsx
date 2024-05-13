@@ -90,7 +90,7 @@ export default function Experience() {
   });
 
   return (
-    <div className="p-2 lg:p-20">
+    <div className="p-2 lg:p-20 min-h-[calc(100vh-4rem)]">
       <Selectors active={filterStates} setActive={setFilterStates} />
       <div className="p-2 lg:p-20">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -114,7 +114,7 @@ function Selectors({
   setActive: (value: FilterStates) => void;
 }) {
   return (
-    <div className="grid grid-cols-2 lg:gap-20 lg:mx-32">
+    <div className="grid grid-cols-2 lg:gap-20 lg:mx-32 ">
       {Object.entries(active).map(([key, value]) => (
         <button
           key={key}

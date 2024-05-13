@@ -23,7 +23,7 @@ const projectItems: ProjectItem[] = [
     title: "Predicting used car prices using machine learning",
     org: "University",
     description:
-      "An exploratory project using the Kaggle Used Cars database to produce a model that accurately predicted a used cars price. Supervised techniques such as XGBoost and emsembling were utilised.",
+      "An exploratory project using the Kaggle Used Cars dataset to produce a model that accurately predicted a used car's price. Supervised techniques such as XGBoost and emsembling were utilised.",
     repoUrl:
       "https://github.com/Rhetora/aml-coursework/blob/main/COMP6208__AML_Machine_Learning_Report.pdf",
     liveUrl: "test.com",
@@ -62,11 +62,10 @@ const projectItems: ProjectItem[] = [
 
 export default function Projects() {
   return (
-    <div className="p-2 lg:p-20">
-      {projectItems.map(
-        (item, index) =>
-            <ProjectCard itemData={item} key={index} />
-      )}
+    <div className="p-2 lg:p-20 min-h-[calc(100vh-4rem)]">
+      {projectItems.map((item, index) => (
+        <ProjectCard itemData={item} key={index} />
+      ))}
     </div>
   );
 }
