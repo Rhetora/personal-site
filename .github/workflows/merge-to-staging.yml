@@ -1,4 +1,4 @@
-name: Sync multiple branches
+name: Merge into staging ready to deploy
 on:
   workflow_dispatch:
 jobs:
