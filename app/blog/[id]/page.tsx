@@ -23,9 +23,11 @@ export default function PostPage({ params }: PostPageProps) {
   return (
     <article>
       <ReactMarkdown
-        children={post.content}
+        //children={post.content}
         remarkPlugins={[remarkHtml]}
-      />
+      >
+        {post.content}
+      </ReactMarkdown>
     </article>
   );
 }
