@@ -21,7 +21,7 @@ export default async function PostPage({ params }: { params: { id: string } }) {
     <article className="w-full">
       <figure>
         <img
-          src={post.cover_url}
+          src={"."+post.cover_url}
           alt={post.title}
           className="object-cover w-full h-[calc(100vh-4rem)]"
         />

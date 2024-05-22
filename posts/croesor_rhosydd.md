@@ -1,12 +1,12 @@
 ---
 title: 'Croesor Rhosydd'
 subtitle: "An overnight adventure in North Wales' slate mines"
-intro: "Though Eloi and I had already experienced a variety of conditions – from blissful to miserable – since our departure from San Diego, California, eight months earlier, this was the first time I truly worried that we had made a mistake."
-cover_url: "/posts/croesor_rhosydd.jpg"
+intro: 'A big adventure for two very unexperienced cavers. To complete the Croesor - Rhosydd through trip desribed as "Underground snakes and ladders on steroids", spending the night sleeping somewhere underground.'
+cover_url: "./posts/croesor_rhosydd.jpg"
 date: '2024-26-04'
 ---
 
-![image info](/posts/outside_start.jpg)
+![image info](../posts/outside_start.jpg)
 
 We decided to start the trip on the evening of the 26th, parking in Croesor at around 7pm, and rapidly changed and packed in the car park. We then started on a steep slog up the road to the Croesor entrance, passing a farmer on a quad with his dogs who told us we were crazy after telling him our plan. We reached the entrance just before sunset, where we enjoyed the views over the old mine buildings and mountains. We then donned our harnesses, and started into the mine!
 
