@@ -2,10 +2,11 @@
 
 import { usePathname } from "next/navigation";
 import { useContext } from "react";
-import Link from "next/link";
 import ThemeSwap from "@/components/ThemeBtn";
 import { ThemeContext } from "@/context/ThemeContext";
 
+const env = process.env.NODE_ENV === "development";
+const basePath = (env ? '': '/personal-site');
 interface NavigationItem {
   name: string;
   href: string;
@@ -49,7 +50,7 @@ export default function Navbar() {
   return (
     <div className="navbar bg-base-300">
       <div className="flex-1">
-        <a className="btn btn-ghost text-semibold text-2xl" href="./">
+        <a className="btn btn-ghost text-semibold text-2xl" href={basePath+'/'}>
           Aran McConnell
         </a>
       </div>
@@ -91,7 +92,7 @@ export default function Navbar() {
           {navigationItems.map((item) => (
             <li key={item.name}>
               <a
-                href={item.href}
+                href={basePath+item.href}
                 className={classNames(isActive(item.href) ? "active" : "")}
               >
                 {item.name}

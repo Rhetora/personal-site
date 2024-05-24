@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 
 
-const env = process.env.NODE_ENV === 'development';;
+const env = process.env.NODE_ENV === 'development';
 const nextConfig = {
-    // reactStrictMode: true,
+    reactStrictMode: true,
     output: 'export',
-    basePath: '/personal-site',
-    assetPrefix: '/personal-site/', 
-    // pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
+    basePath: env ? '': '/personal-site',
+    assetPrefix: env ? '': '/personal-site/', 
+    pageExtensions: ['js', 'jsx', 'md', 'ts', 'tsx'],
 };
 
 export default nextConfig;
