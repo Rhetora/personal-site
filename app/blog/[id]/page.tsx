@@ -1,6 +1,5 @@
-import { getPostData, getPostFiles } from "../../../lib/posts";
+import { PostData, getPostData, getPostFiles } from "../../../lib/posts";
 import Markdown from "react-markdown";
-import remarkHtml from "remark-html";
 import remarkGfm from "remark-gfm";
 
 export async function generateStaticParams() {
@@ -15,7 +14,8 @@ export async function generateStaticParams() {
 
 export default async function PostPage({ params }: { params: { id: string } }) {
   const { id } = params;
-  const post = await getPostData(`${id}.md`);
+  try {
+  const post: PostData = await getPostData(`${id}.md`);
 
   return (
     <article className="w-full">
@@ -32,8 +32,11 @@ export default async function PostPage({ params }: { params: { id: string } }) {
 
         <p className="text-center text-lg italic text-gray-500">{post.intro}</p>
         <hr />
-        <Markdown>{post.content}</Markdown>
+        <Markdown remarkPlugins={[remarkGfm]}>{post.content}</Markdown>
       </div>
     </article>
-  );
+  );}
+  catch {
+    return <h1>Post not found</h1>
+  }
 }

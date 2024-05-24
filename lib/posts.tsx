@@ -1,9 +1,6 @@
 import fs from "fs";
 import path from "path";
-import matter from "gray-matter";
-import { remark } from "remark";
-import html from "remark-html";
-import { get } from "http";
+import matter, { GrayMatterFile } from "gray-matter";
 
 export interface PostData {
   fileName: string;
@@ -17,37 +14,43 @@ export interface PostData {
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
-export function getPostFiles() {
+export function getPostFiles(): string[] {
   return fs.readdirSync(postsDirectory);
 }
 
 export async function getPostData(fileName: string): Promise<PostData> {
-  // Read markdown file as string
-  const fullPath = path.join(postsDirectory, fileName);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+  try {
+    // Read markdown file as string
+    const fullPath = path.join(postsDirectory, fileName);
+    const fileContents = await fs.promises.readFile(fullPath, "utf8");
 
-  // Remove ".md" from file name to get file name
-  const fileId = fileName.replace(/\.md$/, "");
+    // Remove ".md" from file name to get file name
+    const fileId = fileName.replace(/\.md$/, "");
 
-  // Use gray-matter to parse the post metadata section
-  const matterResult = matter(fileContents);
+    // Use gray-matter to parse the post metadata section
+    const matterResult: GrayMatterFile<string> = matter(fileContents);
 
-  const post_data: PostData = {
-    fileName: fileId,
-    title: matterResult.data.title,
-    subtitle: matterResult.data.subtitle,
-    intro: matterResult.data.intro,
-    cover_url: matterResult.data.cover_url,
-    content: matterResult.content,
-    date: matterResult.data.date,
-  };
+    const post_data: PostData = {
+      fileName: fileId,
+      title: matterResult.data.title,
+      subtitle: matterResult.data.subtitle,
+      intro: matterResult.data.intro,
+      cover_url: matterResult.data.cover_url,
+      content: matterResult.content,
+      date: matterResult.data.date,
+    };
 
-  return post_data;
+    return post_data;
+  } catch (error) {
+    throw new Error(
+      `Failed to read post data for file: ${fileName}`
+    );
+  }
 }
 
 export async function getSortedPostsData(): Promise<PostData[]> {
   // Get file names under /posts
-  const fileNames = getPostFiles();
+  const fileNames: string[] = getPostFiles();
   const allPostsData = await Promise.all(
     fileNames.map((name) => getPostData(name))
   );
