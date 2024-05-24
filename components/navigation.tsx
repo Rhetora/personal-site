@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useContext } from "react";
+import Link from "next/link";
 import ThemeSwap from "@/components/ThemeBtn";
 import { ThemeContext } from "@/context/ThemeContext";
 
@@ -11,15 +12,26 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  { name: "Home", href: "./" },
+  { name: "Home", href: "/" },
   //{ name: "Skills", href: "/skills" },
-  { name: "Timeline", href: "./experience" },
+  { name: "Timeline", href: "/experience" },
   //{ name: "Education", href: "/education" },
-  { name: "Projects", href: "./projects" },
+  { name: "Projects", href: "/projects" },
   // { name: "Qualifications", href: "/qualifications" },
   // { name: "Adventures", href: "/adventures" },
-  // { name: "Blog", href: "/blog" },
+  { name: "Blog", href: "/blog" },
 ];
+
+// function handleKeyDown(e: any) {
+//   var evtobj = window.event ? event : e;
+//   e.stopImmediatePropagation();
+//   console.log(e.keyCode);
+
+//   if (evtobj.shiftKey && evtobj.keyCode == 68 && evtobj.ctrlKey) {
+//     alert("GG!");
+//   }
+//   e.preventDefault();
+// }
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -29,6 +41,10 @@ export default function Navbar() {
   const pathname = usePathname();
   const isActive = (href: any) => "." + pathname == href;
   const { changeTheme } = useContext(ThemeContext);
+
+  // useEffect(() => {
+  //   document.addEventListener("keydown", (e: KeyboardEvent) => handleKeyDown(e));
+  // }, []);
 
   return (
     <div className="navbar bg-base-300">
@@ -53,8 +69,10 @@ export default function Navbar() {
             ></path>
           </svg>
         </div>
-        <ul tabIndex={0}
-          className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+        <ul
+          tabIndex={0}
+          className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+        >
           {navigationItems.map((item) => (
             <li key={item.name}>
               <a
