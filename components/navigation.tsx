@@ -40,7 +40,7 @@ function classNames(...classes: any) {
 
 export default function Navbar() {
   const pathname = usePathname();
-  const isActive = (href: any) => pathname == href;
+  const isActive = (href: any) => pathname == basePath + href;
   const { changeTheme } = useContext(ThemeContext);
 
   // useEffect(() => {
