@@ -6,7 +6,7 @@ import ThemeSwap from "@/components/ThemeBtn";
 import { ThemeContext } from "@/context/ThemeContext";
 
 const env = process.env.NODE_ENV === "development";
-const basePath = (env ? '': '/personal-site');
+const basePath = env ? "" : "/personal-site";
 interface NavigationItem {
   name: string;
   href: string;
@@ -40,7 +40,7 @@ function classNames(...classes: any) {
 
 export default function Navbar() {
   const pathname = usePathname();
-  const isActive = (href: any) => "." + pathname == href;
+  const isActive = (href: any) => pathname == href;
   const { changeTheme } = useContext(ThemeContext);
 
   // useEffect(() => {
@@ -50,7 +50,10 @@ export default function Navbar() {
   return (
     <div className="navbar bg-base-300">
       <div className="flex-1">
-        <a className="btn btn-ghost text-semibold text-2xl" href={basePath+'/'}>
+        <a
+          className="btn btn-ghost text-semibold text-2xl"
+          href={basePath + "/"}
+        >
           Aran McConnell
         </a>
       </div>
@@ -77,8 +80,10 @@ export default function Navbar() {
           {navigationItems.map((item) => (
             <li key={item.name}>
               <a
-                href={item.href}
-                className={classNames(isActive(item.href) ? "active" : "")}
+                href={basePath + item.href}
+                className={classNames(
+                  isActive(basePath + item.href) ? "active" : ""
+                )}
               >
                 {item.name}
               </a>
@@ -92,8 +97,10 @@ export default function Navbar() {
           {navigationItems.map((item) => (
             <li key={item.name}>
               <a
-                href={basePath+item.href}
-                className={classNames(isActive(item.href) ? "active" : "")}
+                href={basePath + item.href}
+                className={classNames(
+                  isActive(basePath + item.href) ? "active" : ""
+                )}
               >
                 {item.name}
               </a>
