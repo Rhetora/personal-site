@@ -40,7 +40,7 @@ Finally, we came to the last chamber of named obstacles, beginning an opening in
 
 ![The canoe from the ledge](../posts/canoe.jpg)
 
-After making it to the far side, we quickly jumped out and pulled ourselves up an in situ rope onto a rock slab, which we then traversed while clipping into other ropes. This took us to the base of the final obstacle, a rope climb section. Here Poppy went first again with her first time ascending a rope. After setting up a system of prussiks, she went up, clipping her cow's tail in a few bolts scattered over the wall. Once up top, we rigged a redirect with the pulley to bring the 3rd bag up, and I repeated the same movements, finally getting me out of the canoe cavern.
+After making it to the far side, and after Poppy shed a few relief tears, we quickly jumped out and pulled ourselves up an in situ rope onto a rock slab, which we then traversed while clipping into other ropes. This took us to the base of the final obstacle, a rope climb section. Here Poppy went first again with her first time ascending a rope. After setting up a system of prussiks, she went up, clipping her cow's tail in a few bolts scattered over the wall. Once up top, we rigged a redirect with the pulley to bring the 3rd bag up, and I repeated the same movements, finally getting me out of the canoe cavern.
 
 ![Climbing the rope](../posts/aran_ropeclimb.jpg)
 
