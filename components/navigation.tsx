@@ -49,7 +49,35 @@ export default function Navbar() {
 
   return (
     <div className="navbar bg-base-300">
-      <div className="flex-1">
+      {/* Desktop */}
+      <div className="flex-1 lg:block">
+        <a
+          className="btn btn-ghost text-semibold text-2xl"
+          href={basePath + "/"}
+        >
+          Aran McConnell
+        </a>
+      </div>
+
+      <div className="flex-none hidden lg:block">
+        <ul className="menu menu-horizontal text-md text-semibold px-1">
+          {navigationItems.map((item) => (
+            <li key={item.name}>
+              <a
+                href={basePath + item.href}
+                className={classNames(
+                  isActive(basePath + item.href) ? "active" : ""
+                )}
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
+          <ThemeSwap handleOnClick={changeTheme} />
+        </ul>
+      </div>
+      {/* Mobile */}
+      <div className="flex-1 lg:hidden">
         <a
           className="btn btn-ghost text-semibold text-2xl"
           href={basePath + "/"}
@@ -77,23 +105,6 @@ export default function Navbar() {
           tabIndex={0}
           className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
         >
-          {navigationItems.map((item) => (
-            <li key={item.name}>
-              <a
-                href={basePath + item.href}
-                className={classNames(
-                  isActive(basePath + item.href) ? "active" : ""
-                )}
-              >
-                {item.name}
-              </a>
-            </li>
-          ))}
-          <ThemeSwap handleOnClick={changeTheme} />
-        </ul>
-      </div>
-      <div className="flex-none hidden lg:block">
-        <ul className="menu menu-horizontal text-md text-semibold px-1">
           {navigationItems.map((item) => (
             <li key={item.name}>
               <a
