@@ -5,6 +5,7 @@ import matter, { GrayMatterFile } from "gray-matter";
 export interface PostData {
   fileName: string;
   title: string;
+  category: string;
   subtitle: string;
   intro: string;
   cover_url: string;
@@ -33,6 +34,7 @@ export async function getPostData(fileName: string): Promise<PostData> {
     const post_data: PostData = {
       fileName: fileId,
       title: matterResult.data.title,
+      category: matterResult.data.category,
       subtitle: matterResult.data.subtitle,
       intro: matterResult.data.intro,
       cover_url: matterResult.data.cover_url,
