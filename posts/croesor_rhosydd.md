@@ -1,6 +1,6 @@
 ---
 title: 'Croesor Rhosydd'
-category: 'Adventures"
+category: 'Adventures'
 subtitle: "An overnight adventure in North Wales' slate mines"
 intro: 'A big adventure for two very inexperienced cavers. To complete the Croesor - Rhosydd through trip described as "Underground snakes and ladders on steroids", spending the night sleeping somewhere underground.'
 cover_url: "./posts/croesor_rhosydd/cover.jpg"
