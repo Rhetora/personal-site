@@ -18,7 +18,7 @@ Multipitch anchors will focus on a setup using a clove hitch to attach the leade
 ### Toprope
 One of the most common methods used to build toprope anchors is to use two opposed quickdraws clipped in to the two bolts, or chains/rings if provided. This method is best used when you only have quickdraws available, and the anchor will not see a lot toproping use. Locking quickdraws can be used, but are uncommon.
 
-![Quickdraws anchor built](../posts/sport_climbing_anchors/quickdraws_built.jpg)
+![Quickdraws anchor built](../posts/sport_climbing_anchors/draws_tr.jpg)
 
 #### How to build:
 
@@ -41,7 +41,7 @@ The BFK anchor is an extremely common and simple anchor that is extremely secure
 ### Toprope
 This anchor creates a very secure top rope anchor that is simple to tie, but does not self equalise if the loaded direction moves.
 
-![Getting ready outside the croesor entrance](../posts/outside_start.jpg)
+![BFK Toprope](../posts/sport_climbing_anchors/bfk_tr.jpg)
 
 #### How to build:
 1. Clip a locking carabiner to the left bolt with the widepoint down, and the gate facing left.
@@ -54,7 +54,7 @@ This anchor creates a very secure top rope anchor that is simple to tie, but doe
 ### Multipitch
 The BFK anchor can also be used when multipitching. The main difference here is that the belay device can be clipped in to the loop created by the knots, and the leader can clove hitch into a carabiner clipped into the same loop.
 
-![Getting ready outside the croesor entrance](../posts/outside_start.jpg)
+![BFK Multipitch](../posts/sport_climbing_anchors/bfk_mp.jpg)
 
 #### How to build:
 
