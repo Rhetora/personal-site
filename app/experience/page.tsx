@@ -22,7 +22,17 @@ interface FilterStates {
 const experienceItems: ExperienceItem[] = [
   {
     category: "work",
-    date: "Feb. 2024 - Present",
+    date: "July. 2024 - Present",
+    image: "./fractile.webp",
+    org: "Fractile",
+    location: "London, UK",
+    title: "ML Compiler Engineer",
+    basis: "Full time",
+    desc: "Building chips that remove every bottleneck to running large language models at a global scale",
+  },
+  {
+    category: "work",
+    date: "Feb. 2024 - June 2024",
     image: "./captainapp.webp",
     org: "Captain App",
     location: "Bristol, UK",
