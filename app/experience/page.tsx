@@ -28,7 +28,7 @@ const experienceItems: ExperienceItem[] = [
     location: "London, UK",
     title: "ML Compiler Engineer",
     basis: "Full time",
-    desc: "Building chips that remove every bottleneck to running large language models at a global scale",
+    desc: "Building chips that remove every bottleneck to running LLMs at a global scale",
   },
   {
     category: "work",
@@ -38,7 +38,7 @@ const experienceItems: ExperienceItem[] = [
     location: "Bristol, UK",
     title: "Software Engineer",
     basis: "Part time",
-    desc: "Building applications from the ground up for numerous small clients, utilising Typescript and Python backends run on Google Cloud Platform, with NextJS and Flutter frontends.",
+    desc: "Building scalable modern applications utilising AI and cloud computing",
   },
   {
     category: "work",
@@ -48,7 +48,7 @@ const experienceItems: ExperienceItem[] = [
     location: "Bristol, UK",
     title: "Graduate Software Engineer",
     basis: "Full time",
-    desc: "Accelerating embedded machine learning on xcore.ai, through compile time and runtime optimisation.",
+    desc: "Accelerating edge ML through compile time and runtime optimisation",
   },
   {
     category: "work",
@@ -58,7 +58,7 @@ const experienceItems: ExperienceItem[] = [
     location: "Cambridge, UK",
     title: "Summer Intern",
     basis: "Full time",
-    desc: "Evaluating proof of concept technologies in applications for home appliances.",
+    desc: "Evaluating proof of concept technologies for application in home appliances",
   },
   {
     category: "work",
@@ -68,7 +68,7 @@ const experienceItems: ExperienceItem[] = [
     location: "Whiteparish, UK",
     title: "Summer Intern",
     basis: "Full time",
-    desc: "Developing dataloggers and industrial panel meters.",
+    desc: "Developing accurate and low power dataloggers and industrial panel meters",
   },
   {
     category: "education",
@@ -100,9 +100,10 @@ export default function Experience() {
   });
 
   return (
-    <div className="p-2 lg:p-20 min-h-[calc(100vh-4rem)]">
+    <div className="p-2 lg:p-30 min-h-[calc(100vh-4rem)]">
       <Selectors active={filterStates} setActive={setFilterStates} />
-      <div className="p-2 lg:p-20">
+      <div className="flex justify-center">
+      <div className="p-2 lg:p-20 lg:w-3/5">
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           {experienceItems.map(
             (item, index) =>
@@ -111,6 +112,7 @@ export default function Experience() {
               )
           )}
         </ul>
+      </div>
       </div>
     </div>
   );
@@ -124,7 +126,7 @@ function Selectors({
   setActive: (value: FilterStates) => void;
 }) {
   return (
-    <div className="grid grid-cols-2 lg:gap-20 lg:mx-32 ">
+    <div className="grid grid-cols-2 lg:gap-20 lg:mx-32">
       {Object.entries(active).map(([key, value]) => (
         <button
           key={key}
@@ -165,7 +167,7 @@ function ExperienceItem({
       </div>
       <div
         className={
-          even ? "timeline-start md:text-end mb-10" : "timeline-end mb-10"
+          even ? "timeline-start md:text-end mb-10 py-5" : "timeline-end mb-10 py-5"
         }
       >
         <time className="font-mono italic">{itemData.date}</time>
