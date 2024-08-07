@@ -50,7 +50,7 @@ export default function Navbar() {
   return (
     <div className="navbar bg-base-300">
       {/* Desktop */}
-      <div className="flex-1 lg:block">
+      <div className="flex-1 hidden lg:block">
         <a
           className="btn btn-ghost text-semibold text-2xl"
           href={basePath + "/"}
