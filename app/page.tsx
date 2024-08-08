@@ -33,19 +33,18 @@ function Intro() {
       <div className="hero-content flex-col w-3/4 lg:w-1/2 ">
         <div className="space-y-2">
           <h1 className="text-5xl font-bold">Aran McConnell</h1>
-          <h1 className="text-2xl font-semibold">Software Engineer</h1>
+          <h1 className="text-2xl font-semibold">Software Engineer and Extreme Sports Enthusiast</h1>
           <p className="py-6 text-lg">
-            Software engineer with expertise in C/C++, Python, and Typescript,
-            specialising in machine learning, artificial intelligence, and
-            leveraging technology for sustainable solutions. Proficient in
-            developing high-performance software, with previous experience in
-            optimising embedded ML.
+            Working on ML Compilers at Fractile, building chips to accelerate and increase the efficiency of AI inference.
             <br />
             <br />
-            Passionate about using technology to drive positive change, and
+            I'm interested in using technology to drive positive change, and
             accelerate progress towards a greener future. Committed to
             continuous learning and professional growth in the ever-evolving
             tech landscape.
+            <br />
+            <br />
+            When I'm not coding, you can find me in the mountains, climbing and snowboarding, or in the water, surfing and kitesurfing. Or generally having adventures outside.
           </p>
           <button className="btn btn-primary text-lg" aria-label="Download CV">
             <a href="./aran_mcconnell.pdf" download="Aran McConnell">
