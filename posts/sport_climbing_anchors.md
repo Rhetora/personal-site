@@ -75,11 +75,56 @@ The BFK anchor can also be used when multipitching. The main difference here is 
 - Loop can be awkward to fit two carabiners into for multipitching.
 - The leader is coupled to the direction of pull from the belay device.
 
-## Sliding X +MP
+## Sliding X
 
-## That euro one +MP
+The sliding X is another common anchor you might see.
+### Toprope
 
-## Quad +MP
+![Sliding X Toprope](../posts/sport_climbing_anchors/x_tr.jpg)
+
+#### How to build:
+1. 
+
+### Multipitch
+
+
+![Sliding X Multipitch](../posts/sport_climbing_anchors/x_mp.jpg)
+
+#### How to build:
+
+
+
+#### Advantages
+- 
+
+#### Disadvantages
+- 
+
+
+## Quad
+
+The sliding X is another common anchor you might see.
+### Toprope
+
+![Quad Toprope](../posts/sport_climbing_anchors/quad_tr.jpg)
+
+#### How to build:
+1. 
+
+### Multipitch
+
+
+![Quad Multipitch](../posts/sport_climbing_anchors/quad_mp.jpg)
+
+#### How to build:
+
+
+
+#### Advantages
+- 
+
+#### Disadvantages
+- 
 
 
 
