@@ -38,7 +38,7 @@ function Intro() {
             Working on ML Compilers at Fractile, building chips to accelerate and increase the efficiency of AI inference.
             <br />
             <br />
-            I'm interested in using technology to drive positive change, and
+            I&apos;m interested in using technology to drive positive change, and
             accelerate progress towards a greener future. Committed to
             continuous learning and professional growth in the ever-evolving
             tech landscape.
