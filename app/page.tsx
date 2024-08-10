@@ -44,7 +44,7 @@ function Intro() {
             tech landscape.
             <br />
             <br />
-            When I'm not coding, you can find me in the mountains, climbing and snowboarding, or in the water, surfing and kitesurfing. Or generally having adventures outside.
+            When I&apos;m not coding, you can find me in the mountains, climbing and snowboarding, or in the water, surfing and kitesurfing. Or generally having adventures outside.
           </p>
           <button className="btn btn-primary text-lg" aria-label="Download CV">
             <a href="./aran_mcconnell.pdf" download="Aran McConnell">
