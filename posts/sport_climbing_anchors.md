@@ -77,13 +77,21 @@ The BFK anchor can also be used when multipitching. The main difference here is 
 
 ## Sliding X
 
-The sliding X is another common anchor you might see.
+The sliding X is another common anchor you might see, which is relatively simple and does not require any more gear than the BFK. The sliding X consists of carabiners on the two bolts connected by a sling or cord (at least 120cm), with limited knots and a twist for redundancy. The limiter knots are placed either side of the center of the sling, to limit the extension if the anchor where to fail around on of the bolts, and the twist where the master point carabiner is attached allows both strands to be clipped without the carabiner slipping off if a bolt were to fail.
+
 ### Toprope
+This anchor is a great option for a simple toprope, as it is self equalising, and redundant from one side being cut, or a bolt failing.
 
 ![Sliding X Toprope](../posts/sport_climbing_anchors/x_tr.jpg)
 
 #### How to build:
-1. 
+1. Clip a locking carabiner to the left bolt with the widepoint down, and the gate facing left.
+2. Mirror this on the right bolt.
+3. Clip and 120cm or longer cord/sling to one bolt, and tie an overhand knot on the sling slightly to the side of the center.
+4. Tie a second overhand in the sling on the other side of the center so that there is a loop between the two knots.
+5. Clip the other end of the sling to the other bolt carabiner.
+6. Clip your master point carabiner to one of the strands of the center loop.
+7. 
 
 ### Multipitch
 
