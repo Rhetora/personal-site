@@ -25,10 +25,10 @@ const experienceItems: ExperienceItem[] = [
     date: "July. 2024 - Present",
     image: "./fractile.webp",
     org: "Fractile",
-    location: "London, UK",
-    title: "ML Compiler Engineer",
+    location: "Bristol, UK",
+    title: "Member of Technical Staff",
     basis: "Full time",
-    desc: "Building chips that remove every bottleneck to running LLMs at a global scale",
+    desc: "Building chips that remove every bottleneck to running LLMs at a global scale, focused on compilers and architecture.",
   },
   {
     category: "work",
