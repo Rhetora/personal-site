@@ -175,7 +175,7 @@ function ExperienceItem({
           <img
             className={
               even
-                ? "h-16 block lg:ml-auto"
+                ? "h-16 block md:ml-auto"
                 : "h-16 block"
             }
             src={itemData.image}

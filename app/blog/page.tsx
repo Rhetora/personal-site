@@ -6,7 +6,7 @@ export default async function BlogPage() {
 
   return (
     <div className="container mx-auto p-4 pt-20 min-h-[calc(100vh-4rem)]">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {posts.map((postData, index) => (
           <div
             key={index}

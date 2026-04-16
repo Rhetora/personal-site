@@ -14,25 +14,11 @@ interface NavigationItem {
 
 const navigationItems: NavigationItem[] = [
   //{ name: "Home", href: "/" },
-  //{ name: "Skills", href: "/skills" },
   { name: "Timeline", href: "/experience" },
-  //{ name: "Education", href: "/education" },
-  { name: "Projects", href: "/projects" },
-  // { name: "Qualifications", href: "/qualifications" },
+  // { name: "Projects", href: "/projects" },
   // { name: "Adventures", href: "/adventures" },
   { name: "Blog", href: "/blog" },
 ];
-
-// function handleKeyDown(e: any) {
-//   var evtobj = window.event ? event : e;
-//   e.stopImmediatePropagation();
-//   console.log(e.keyCode);
-
-//   if (evtobj.shiftKey && evtobj.keyCode == 68 && evtobj.ctrlKey) {
-//     alert("GG!");
-//   }
-//   e.preventDefault();
-// }
 
 function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
@@ -42,10 +28,6 @@ export default function Navbar() {
   const pathname = usePathname();
   const isActive = (href: any) => pathname == basePath + href;
   const { changeTheme } = useContext(ThemeContext);
-
-  // useEffect(() => {
-  //   document.addEventListener("keydown", (e: KeyboardEvent) => handleKeyDown(e));
-  // }, []);
 
   return (
     <div className="navbar bg-base-300">
